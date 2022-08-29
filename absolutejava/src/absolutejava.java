@@ -6,25 +6,15 @@ import java.nio.file.Paths;
 
 public class absolutejava {
     public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
+        int max = 0;
+        int n1 = 3;
+        int n2 = 1;
 
-        System.out.println("Enter number of ice cream flavors:");
-        int numberOfFlavors = keyboard.nextInt( );
+        if (n1 > n2)
+            max = n1;
+        else
+            max = n2;
 
-        switch (numberOfFlavors) {
-            case 32:
-                System.out.println("Nice selection.");
-                break;
-            case 2:
-            case 3:
-            case 4:
-                System.out.println(numberOfFlavors + "flavors");
-                System.out.println("is acceptable.");
-                break;
-            default:
-                System.out.println("I didn't plan for");
-                System.out.println(numberOfFlavors + " flavors.");
-                break;
-        }
+        max = (n1 > n2) ? n1 : n2;
     }
 }

@@ -12,15 +12,19 @@ public class absolutejava {
         int numberOfFlavors = keyboard.nextInt( );
 
         switch (numberOfFlavors) {
-            case 32 -> System.out.println("Nice selection.");
-            case 2, 3, 4 -> {
+            case 32:
+                System.out.println("Nice selection.");
+                break;
+            case 2:
+            case 3:
+            case 4:
                 System.out.println(numberOfFlavors + "flavors");
                 System.out.println("is acceptable.");
-            }
-            default -> {
+                break;
+            default:
                 System.out.println("I didn't plan for");
                 System.out.println(numberOfFlavors + " flavors.");
-            }
+                break;
         }
     }
 }

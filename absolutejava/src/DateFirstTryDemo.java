@@ -22,18 +22,18 @@ public class DateFirstTryDemo {
         date1.year = 2012;
 
         System.out.println("date1:");
-        date1.writeOutput(); // invoking a method from a class
+        date1.writeOutput(5); // invoking a method from a class
         date1.YellIfNewYear();
         date1.makeItNewYears();
         System.out.println("It has become new year!");
         date1.YellIfNewYear();
-        date1.writeOutput();
+        date1.writeOutput(6);
 
         date2.month = "July";
         date2.day = 4;
         date2.year = 1776;
 
         System.out.println("date2:");
-        date2.writeOutput(); // invoking a method from a class
+        date2.writeOutput(7); // invoking a method from a class
     }
 }
